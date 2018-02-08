@@ -23,7 +23,6 @@ gosta(X, Y) :- pessoa(X), gato(Y).
 
 amigo(X, Y) :- gosta(X, Y), gosta(Y, X).
 
-gosta(miau, eu).
-gosta(eu, miau).
+amigo(eu, miau).
 
 come(X, Y) :- gato(X), not(pessoa(Y)).
